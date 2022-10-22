@@ -48,7 +48,6 @@ if __name__=='__main__':
     
     while not rospy.is_shutdown():
         x = distanc()
-        rospy.loginfo("Distanz is = %.1f" & x)
         rospy.loginfo(x)
         pub.publish(x)
         rate.sleep()
